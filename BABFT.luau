@@ -24,7 +24,7 @@ local function getRootPart()
     return nil
 end
 
-function new()
+local function new()
     local root = getRootPart()
     if not root then return end
 
