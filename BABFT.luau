@@ -118,6 +118,12 @@ elseif _G.Method == "Fast" then
                 Workspace.Gravity = 0
                 root.CFrame = CFrame.new(-57.12045669555664, 61.113685607910156, 1302.994140625)
                 TweenService:Create(root, TweenInfo.new(5, Enum.EasingStyle.Linear, Enum.EasingDirection.Out, 0, false, 0), {CFrame = CFrame.new(-56.0838737487793, 54.31390380859375, 8314.2138671875)}):Play()
+                task.wait(5.1)
+                root = getRootPart() if not root then return end
+                root.CFrame = CFrame.new(-57.87105178833008, 51.55453109741211, 8266.76953125)
+                TweenService:Create(root, TweenInfo.new(0.00000001, Enum.EasingStyle.Linear, Enum.EasingDirection.Out, 0, false, 0), {CFrame = CFrame.new(-55.31483840942383, -355.79541015625, 9494.8115234375)}):Play()
+                
+                Workspace.Gravity = 9999999
                 task.wait(16)
             end)
             
