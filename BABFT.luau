@@ -1,9 +1,6 @@
 local TweenService = game:GetService("TweenService")
 game.Workspace.Gravity = 0
 
-warn("Script was originally made by Florentino#7009")
-
-
 game.Players.LocalPlayer.PlayerGui:ClearAllChildren()
 
 wait(0.5)local ba=Instance.new("ScreenGui")
