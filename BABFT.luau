@@ -1,8 +1,6 @@
 local TweenService = game:GetService("TweenService")
 game.Workspace.Gravity = 0
 
-game.Players.LocalPlayer.PlayerGui:ClearAllChildren()
-
 wait(0.5)local ba=Instance.new("ScreenGui")
 local ca=Instance.new("TextLabel")local da=Instance.new("Frame")
 local _b=Instance.new("TextLabel")local ab=Instance.new("TextLabel")ba.Parent=game.CoreGui
@@ -35,13 +33,11 @@ end
 
 if _G.Method == "Normal" then
     while task.wait() do
-        game.Players.LocalPlayer.PlayerGui:ClearAllChildren()
         new()
         wait(26)
     end
 elseif _G.Method == "Fast" then
     while wait() do
-        game.Players.LocalPlayer.PlayerGui:ClearAllChildren()
         game.Workspace.Gravity = 0
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-57.12045669555664, 61.113685607910156, 1302.994140625)
         TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0.5, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
@@ -84,8 +80,8 @@ elseif _G.Method == "Fast" then
         {CFrame = CFrame.new(-55.31483840942383, -355.79541015625, 9494.8115234375)}):Play()
         game.Workspace.Gravity = 9999999
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-57.12045669555664, 61.113685607910156, 1302.994140625)
-        TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0.00000001, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
-        {CFrame = CFrame.new(-55.31483840942383, -355.79541015625, 9494.8115234375)}):Play()
+        TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(3, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
+        {CFrame = CFrame.new(-51.93910217285156, 37.555145263671875, 7580.24365234375)}):Play()
         wait(16)
     end
 end
