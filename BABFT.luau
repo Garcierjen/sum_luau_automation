@@ -79,6 +79,7 @@ elseif _G.Method == "Fast" then
         TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0.00000001, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
         {CFrame = CFrame.new(-55.31483840942383, -355.79541015625, 9494.8115234375)}):Play()
         game.Workspace.Gravity = 9999999
+        wait(2)
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-57.12045669555664, 61.113685607910156, 1302.994140625)
         TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(3, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
         {CFrame = CFrame.new(-51.93910217285156, 37.555145263671875, 7580.24365234375)}):Play()
