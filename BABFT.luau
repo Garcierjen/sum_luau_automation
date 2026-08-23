@@ -3,7 +3,7 @@ local Players = game:GetService("Players")
 local Workspace = game:GetService("Workspace")
 local VirtualUser = game:GetService("VirtualUser")
 
-if game.PlaceId ~= 537413528 then
+if game.GameId ~= 210851291 then --double check
     Players.LocalPlayer:Kick("son")
 end
 
@@ -136,6 +136,8 @@ elseif _G.Method == "Fast" then
             end
         end
     end)
+elseif not _G.Method then
+    warn("This script require a config _G.Method")
 else
-    Players.LocalPlayer:Kick("Boi invalid method")
+    warn("Boi invalid method")
 end
