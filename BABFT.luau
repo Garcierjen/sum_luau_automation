@@ -54,7 +54,7 @@ if _G.Method == "Normal" then
             if not success then
                 warn("Normal Method Error: " .. tostring(err))
             end
-            task.wait(17)
+            task.wait(16)
             workspace:WaitForChild("ClaimRiverResultsGold"):FireServer()
         end
     end)
