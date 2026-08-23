@@ -64,7 +64,7 @@ elseif _G.Method == "Fast" then
             local success, err = pcall(function()
                 local root = getRootPart()
                 if not root then return end
-
+                workspace:WaitForChild("ClaimRiverResultsGold"):FireServer()
                 Workspace.Gravity = 0
                 root.CFrame = CFrame.new(-57.12045669555664, 61.113685607910156, 1302.994140625)
                 TweenService:Create(root, TweenInfo.new(0.5, Enum.EasingStyle.Linear, Enum.EasingDirection.Out, 0, false, 0), {CFrame = CFrame.new(-44.18965148925781, 50.6323127746582, 1441.3773193359375)}):Play()
