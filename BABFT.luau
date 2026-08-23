@@ -126,7 +126,8 @@ elseif _G.Method == "Fast" then
                 TweenService:Create(root, TweenInfo.new(0.00000001, Enum.EasingStyle.Linear, Enum.EasingDirection.Out, 0, false, 0), {CFrame = CFrame.new(-55.31483840942383, -355.79541015625, 9494.8115234375)}):Play()
                 
                 Workspace.Gravity = 9999999
-                task.wait(16)
+                task.wait(5)
+                workspace:WaitForChild("ClaimRiverResultsGold"):FireServer()
             end)
             
             if not success then
